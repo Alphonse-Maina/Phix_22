@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'Search_Music_Widget.dart';
+
 class LibraryScreen extends StatefulWidget {
+  const LibraryScreen({super.key});
+
   @override
   _LibraryScreenState createState() => _LibraryScreenState();
 }
@@ -60,12 +64,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                           ),
                         ),
                         // Placeholder for Cloud Music
-                        Center(
-                          child: Text(
-                            "Cloud Music",
-                            style: TextStyle(fontSize: 18),
-                          ),
-                        ),
+                        SearchMusicWidget(),
                       ],
                     ),
                   ),
